@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+/* ------------------------------------ FIRST SECTION ----------------------------------------- */
+/* ------------------------------------ FIRST SECTION ----------------------------------------- */
+/* ------------------------------------ FIRST SECTION ----------------------------------------- */
+.first-section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section-row {
+  display: flex;
+  flex-direction: row;
+  height: 92%;
+  position: relative;
+}
+
+#white-blank-space {
+  height: 8%;
+  background-color: white;
+}
+
+.first-section-left-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74%;
+  height: 100%;
+  background-color: #101820ff;
+}
+
+.first-section-left-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  color: whitesmoke;
+}
+
+#title {
+  color: #f2aa4cff;
+  font-size: 4.5em;
+  margin-bottom: 1.1em;
+}
+
+#about-me-text {
+  font-size: 1.7em;
+  width: 95%;
+}
+
+.first-section-right-wrapper {
+  width: 26%;
+  height: 100%;
+  background-color: #f2aa4cff;
+}
+
+
+#image-of-myself {
+  position: absolute;
+  width: 350px;
+  left: calc(74% - 175px);
+  top: calc(45% - 160px);
+  padding: 0px 5px;
+  border-left: 1px solid #f2aa4cff;
+  border-right: 1px solid #101820ff;
+}
+
+/* ------------------------------------ SECOND SECTION ----------------------------------------- */
+
+.second-section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------------------------------------ THIRD SECTION ----------------------------------------- */
+
+.third-section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ------------------------------------ SCROLLBAR ----------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: tomato;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: yellow;
+}
