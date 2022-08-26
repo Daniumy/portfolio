@@ -114,9 +114,51 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="third-section">3 page</div>
+      <div className="third-section">
+        <div className="third-section-wrapper">
+          <h1>Some of my projects!</h1>
+          <div className="projects-wrapper">
+            <ProjectCard
+              image={images.roulette}
+              title="Night Owl Casino"
+              text="The first decentralized casino built on the Ergo blockchain. Night Owl
+        aims to bring the long overdue qualities of transparency, voice, and
+        true privacy to casino gaming to provide the ideal platform on which
+        users can build and play their favorite games."
+            />
+            <ProjectCard
+              image={images.dAppConnector}
+              title="App Wallet Connector"
+              text="Ergo App Connector is a library that contains a component that handles connecting your website to the user's Ergo Wallet. It connects to either Nautilus or Safew which are 2 known browser extension wallets for the Ergo blockchain"
+            />
+            <ProjectCard
+              image={images.aireLocal}
+              title="AireLocal app"
+              text="Android & iOS App that allows the user to check air pollution given a location in the map or given his location detected via the device GPS, it also warns the user about dangerous situations, and allows him to upload his symptoms and a doctor could check them anytime"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
+function ProjectCard({ image, title, text }) {
+  return (
+    <div className="project-card">
+      <img
+        alt="Project image"
+        src={image}
+        style={{
+          height: "55%",
+          width: "90%",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
+      />
+      <h2>{title}</h2>
+      <div className="project-card-text">{text}</div>
+    </div>
+  );
+}
 export default App;
