@@ -38,7 +38,7 @@
   justify-content: center;
   width: 74%;
   height: 100%;
-  background-color: #101820ff;
+  background-color: #00203fff;
 }
 
 .first-section-left-content {
@@ -50,7 +50,7 @@
 }
 
 #title {
-  color: #f2aa4cff;
+  color: #adefd1ff;
   font-size: 4.5em;
   margin-bottom: 1.1em;
 }
@@ -63,9 +63,8 @@
 .first-section-right-wrapper {
   width: 26%;
   height: 100%;
-  background-color: #f2aa4cff;
+  background-color: #adefd1ff;
 }
-
 
 #image-of-myself {
   position: absolute;
@@ -73,8 +72,8 @@
   left: calc(74% - 175px);
   top: calc(45% - 160px);
   padding: 0px 5px;
-  border-left: 1px solid #f2aa4cff;
-  border-right: 1px solid #101820ff;
+  border-left: 1px solid #adefd1ff;
+  border-right: 1px solid #00203fff;
 }
 
 /* ------------------------------------ SECOND SECTION ----------------------------------------- */
@@ -84,10 +83,53 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
 }
 
+.about-me-text-wrapper {
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+  padding: 2em;
+  padding-top: 1em;
+  background-color: #adefd1ff;
+}
 
+.about-me-text-wrapper h1 {
+  text-align: center;
+  color: #00203fff;
+  font-size: 4.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0em;
+}
+
+.about-me-text {
+  font-size: 1.3em;
+}
+
+#coding-guy-image {
+  width: 30%;
+  height: 30%;
+}
+
+#airplane-image {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 20px;
+  left: 20px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.tech-stack > li {
+margin: 10px 0px;
+}
 /* ------------------------------------ THIRD SECTION ----------------------------------------- */
 
 .third-section {
@@ -97,8 +139,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* ------------------------------------ SCROLLBAR ----------------------------------------- */
 ::-webkit-scrollbar {
@@ -110,9 +150,9 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: tomato;
+  background-color: #00203fff;
 }
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background-color: yellow;
-}
+} */
