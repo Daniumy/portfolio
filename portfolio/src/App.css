@@ -128,7 +128,7 @@
 }
 
 .tech-stack > li {
-margin: 10px 0px;
+  margin: 10px 0px;
 }
 /* ------------------------------------ THIRD SECTION ----------------------------------------- */
 
@@ -184,7 +184,7 @@ margin: 10px 0px;
 }
 
 .project-card h2 {
-  color:#00203fff;
+  color: #00203fff;
   text-align: center;
   font-size: 2em;
 }
@@ -195,7 +195,118 @@ margin: 10px 0px;
   font-size: 1.3em;
 }
 
+/* ------------------------------------ THIRD SECTION ----------------------------------------- */
 
+.fourth-section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00203fff;
+}
+
+.fourth-section-wrapper {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourth-section-wrapper h1 {
+  text-align: center;
+  color: #adefd1ff;
+  font-size: 4.5em;
+  margin-bottom: 0.1em;
+}
+
+#contact-subtitle {
+  text-align: center;
+  color: #adefd1ff;
+  font-size: 1.5em;
+  margin-bottom: 1.6em;
+  width: 40vw;
+}
+
+form {
+  width: 50%;
+  height: 45%;
+  background-color: #adefd1ff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 1.6em;
+}
+
+.first-input-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.first-input-row-container {
+  width: 50%;
+  padding: 0px 1.7em;
+}
+
+.first-input-row-container > input {
+  width: 100%;
+  height: 65%;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.second-input-row-container {
+  width: 100%;
+  padding: 0px 1.7em;
+}
+.second-input-row-container > textarea {
+  width: 100%;
+  height: 170px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.second-input-row-container h2,
+.first-input-row-container h2 {
+  margin-bottom: 10px;
+  color: #00203fff;
+}
+
+textarea {
+  resize: none;
+}
+
+.send-button {
+  padding: 1% 2%;
+  background-color: #adefd1ff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  color: #00203fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.send-button:active {
+  transform: scale(0.9);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
 /* ------------------------------------ SCROLLBAR ----------------------------------------- */
 ::-webkit-scrollbar {
   width: 6px;

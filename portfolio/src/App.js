@@ -139,6 +139,47 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="fourth-section">
+        <div className="fourth-section-wrapper">
+          <h1>Contact</h1>
+          <div
+            style={{
+              width: 200,
+              height: 2,
+              backgroundColor: "#adefd1ff",
+              marginBottom: 30,
+            }}
+          ></div>
+          <h2 id="contact-subtitle">Have a question, want to work together, or simply want to say hi? Go ahead!</h2>
+          <form action="" onSubmit={""}>
+            <div className="first-input-row">
+              <div className="first-input-row-container">
+                <h2>Name</h2>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div className="first-input-row-container">
+                <h2>Email Address</h2>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+            </div>
+            <div className="second-input-row-container">
+              <h2>Write a message</h2>
+              <textarea name="message" placeholder="Write your message" required/>
+            </div>
+          </form>
+          <button className="send-button">Send</button>
+        </div>
+      </div>
     </div>
   );
 }
