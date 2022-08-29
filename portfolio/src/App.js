@@ -1,9 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import images from "./utils/images";
+import emailjs from '@emailjs/browser';
 
 function App() {
   const [airplaneHovered, setAirplaneHovered] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_2cqqe2b', 'template_zg7hi43', form.current, '8RbTIydG3KwPP205m')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   function handleAirplanedHovered(e) {
     console.log(e);
@@ -151,13 +164,13 @@ function App() {
             }}
           ></div>
           <h2 id="contact-subtitle">Have a question, want to work together, or simply want to say hi? Go ahead!</h2>
-          <form action="" onSubmit={""}>
+          <form id="contact-form" ref={form} action="" onSubmit={sendEmail}>
             <div className="first-input-row">
               <div className="first-input-row-container">
                 <h2>Name</h2>
                 <input
                   type="text"
-                  name="fullname"
+                  name="name"
                   placeholder="Enter your name"
                   required
                 />
@@ -177,7 +190,7 @@ function App() {
               <textarea name="message" placeholder="Write your message" required/>
             </div>
           </form>
-          <button className="send-button">Send</button>
+          <button type="submit" form="contact-form" className="send-button">Send</button>
         </div>
       </div>
     </div>
