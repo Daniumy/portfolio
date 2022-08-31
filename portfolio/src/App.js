@@ -1,21 +1,31 @@
 import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import images from "./utils/images";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 function App() {
   const [airplaneHovered, setAirplaneHovered] = useState(false);
 
   const form = useRef();
+  let navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_2cqqe2b', 'template_zg7hi43', form.current, '8RbTIydG3KwPP205m')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_2cqqe2b",
+        "template_zg7hi43",
+        form.current,
+        "8RbTIydG3KwPP205m"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   function handleAirplanedHovered(e) {
@@ -48,7 +58,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="first-section-right-wrapper"></div>
+          <div className="first-section-right-wrapper">
+          </div>
           <img id="image-of-myself" src={images.myself} alt="Myself" />
         </div>
         <div id="white-blank-space"></div>
@@ -138,16 +149,19 @@ function App() {
         aims to bring the long overdue qualities of transparency, voice, and
         true privacy to casino gaming to provide the ideal platform on which
         users can build and play their favorite games."
+              onClick={() => navigate("/NightOwl")}
             />
             <ProjectCard
               image={images.dAppConnector}
               title="App Wallet Connector"
               text="Ergo App Connector is a library that contains a component that handles connecting your website to the user's Ergo Wallet. It connects to either Nautilus or Safew which are 2 known browser extension wallets for the Ergo blockchain"
+              onClick={() => navigate("/DappConnector")}
             />
             <ProjectCard
               image={images.aireLocal}
               title="AireLocal app"
               text="Android & iOS App that allows the user to check air pollution given a location in the map or given his location detected via the device GPS, it also warns the user about dangerous situations, and allows him to upload his symptoms and a doctor could check them anytime"
+              onClick={() => navigate("/AireLocal")}
             />
           </div>
         </div>
@@ -163,7 +177,10 @@ function App() {
               marginBottom: 30,
             }}
           ></div>
-          <h2 id="contact-subtitle">Have a question, want to work together, or simply want to say hi? Go ahead!</h2>
+          <h2 id="contact-subtitle">
+            Have a question, want to work together, or simply want to say hi? Go
+            ahead!
+          </h2>
           <form id="contact-form" ref={form} action="" onSubmit={sendEmail}>
             <div className="first-input-row">
               <div className="first-input-row-container">
@@ -187,19 +204,25 @@ function App() {
             </div>
             <div className="second-input-row-container">
               <h2>Write a message</h2>
-              <textarea name="message" placeholder="Write your message" required/>
+              <textarea
+                name="message"
+                placeholder="Write your message"
+                required
+              />
             </div>
           </form>
-          <button type="submit" form="contact-form" className="send-button">Send</button>
+          <button type="submit" form="contact-form" className="send-button">
+            Send
+          </button>
         </div>
       </div>
     </div>
   );
 }
 
-function ProjectCard({ image, title, text }) {
+function ProjectCard({ image, title, text, onClick }) {
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={onClick}>
       <img
         alt="Project image"
         src={image}
