@@ -57,9 +57,12 @@
     flex-direction: row;
   }
   
-  #MyRole-image {
+  #MyRole-image-dapp {
     width: 400px;
-    height: 370px;
+    height: 200px;
+    margin-top: 12%;
+    margin-left: 5%;
+    border-radius: 5px;
   }
   
   #Technologies-image {

@@ -86,6 +86,9 @@ export default function NightOwl() {
                 <li>CSS/HTML</li>
                 <li>Matomo</li>
               </ul>
+              <ul>
+                <li>Git</li>
+              </ul>
             </div>
           </div>
           <img id="Technologies-image" src={images.webDesignIllustration} />

@@ -10,6 +10,8 @@ import mobileIllustration from "../assets/mobileIllustration.svg"
 import scrumBoardIllustrarion from "../assets/scrumBoardIllustrarion.svg"
 import htmlcssjsIllustration from "../assets/htmlcssjsIllustration.svg"
 import backArrow from "../assets/backArrow.svg"
+import reactNpmImage from "../assets/reactNpmImage2.png"
+import mobileDevelopmentImage from "../assets/mobileDevelopmentImage.svg"
 
 const images = {
     myself: myself,
@@ -24,6 +26,8 @@ const images = {
     mobileIllustration: mobileIllustration,
     webDesignIllustration: htmlcssjsIllustration,
     backArrow: backArrow,
+    reactNpm: reactNpmImage,
+    mobileDevelopment: mobileDevelopmentImage,
 }
 
 export default images;

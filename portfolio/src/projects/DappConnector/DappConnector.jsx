@@ -71,7 +71,7 @@ export default function DappConnector() {
               </ul>
             </div>
           </div>
-          <img id="MyRole-image" src={images.scrumBoard} />
+          <img id="MyRole-image-dapp" src={images.reactNpm} />
         </div>
         <div className="MyRole-container">
           <div className="MyRole-text-container">
@@ -87,6 +87,7 @@ export default function DappConnector() {
               </ul>
               <ul>
                 <li>Rollup.js</li>
+                <li>Git</li>
               </ul>
             </div>
           </div>
@@ -96,12 +97,12 @@ export default function DappConnector() {
         <div className="ul-wrapper">
           <ul>
             <li>
-              <a href="https://github.com/nightowlcasino/NightOwl-Frontend/tree/Daniumy_latestUpdates">
+              <a href="https://github.com/nightowlcasino/dApp-connector-react-package/tree/safewImplementation">
                 Github
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/NightOwlCasino">Twitter</a>
+              <a href="https://www.npmjs.com/package/ergo-dapp-connector">NPM</a>
             </li>
           </ul>
         </div>
