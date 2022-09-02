@@ -1,0 +1,78 @@
+{
+    "title" : "Desarrollador Software",
+    "subtitle" : {
+        "uno": "Me gradué como Ingeniero Informático en la Universidad de Murcia, me apasiona el desarrollo web y deseo convertirme en un gran desarrollador Full-Stack en el futuro.",
+        "dos": "Me considero un aprendiz insaciable que le gusta producir software de alta calidad, escalable, responsive y con una buena experiencia de usuario."
+    },
+    "aboutme": "Sobre mí",
+    "aboutmetext": {
+        "uno": "¡Hola! Soy Daniel, me encanta programar, comencé mi carrera de programador cuando tenía 15 años intentando crear un mod para un juego llamado Minecraft. No entendía nada solo seguí instrucciones de un video tutorial, no entendía nada, pero me gustaba.",
+        "dos": "Entonces decidí entrar a la carrera de Ingeniería Informática en la Universidad de Murcia, donde descubrí lo complejo que puede ser la programación y que el proceso de aprendizaje es infinito, no he parado de aprender desde entonces y no planeo parar.",
+        "tres": "En mi tercer año de carrera, comencé a usar mi tiempo libre para aprender de forma autónoma, y me llevó a tomar algunos cursos de desarrollo web en Youtube y ",
+        "thisone": "este concretamente",
+        "cuatro": ", este auto-aprendizaje hizo que me encantase el desarrollo web y entrar en un equipo de desarrolladores de diferentes lugares del mundo para construir nuestro casino de ensueño juntos! Puedo comunicarme fácilmente con ellos gracias a mi C1 de Cambridge en inglés.",
+        "cinco": "Ahora mismo estoy buscando una posición como Desarrollador Web Junior, ¡perfeccionar mis habilidades y aprender nuevas!",
+        "seis": "Estas son algunas tecnologías con las que he trabajado ordenadas de más a menos experiencia con ellas:",
+        "siete": "React, JavaScript, HTML, CSS, Git, VSCode",
+        "ocho": "Java, React Native, Eclipse, Jira, Firebase",
+        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
+    },
+    "projectstitle": "¡Algunos de mis proyectos!",
+    "nightowlcasino": "Night Owl Casino",
+    "nightowlbrief": "El primer casino descentralizado en la blockchain Ergo. Night Owl desea proveer las cualidades de transparencia, voz y verdadera privacidad al mundo del casino creando así la plataforma ideal en la que los usuarios pueden construir y jugar sus juegos favoritos.",
+    "appwalletconnector": "Librería para conectar wallet",
+    "appwalletbrief": "'Ergo App Connector' es una libreria que contiene un componente que maneja la conexión de una billetera de Ergo en tu web. Se conecta bien con Nautilus o Safew que son las dos billeteras extensiones de navegador más conocidas de Ergo",
+    "airelocal": "AireLocal App",
+    "airelocalbrief": "App para Android & iOS que permite al usuario comprobar la contaminación en el aire dada una localización en el mapa o su localizacion usando el GPS del dispositivo, avisa al usuario de situaciones peligrosas y permite al usuario subir sus síntomas que un doctor podrá comprobar posteriormente",
+    "contact": "Contacto",
+    "contact-subtitle": "Tienes una pregunta, quieres que trabajemos juntos, ¿o solo quieres saludar? ¡Adelante!",
+    "name": "Nombre",
+    "email-address": "Dirección de correo",
+    "write-a-message": "Escribe tu mensaje",
+    "send": "Enviar",
+    "gobackhome": "Página principal",
+    "airelocalshowcase": "AireLocal Review",
+    "about": "Sobre el proyecto",
+    "abouttextairelocal": {
+        "uno":"Es una aplicación de Android e iOS que permite al usuario comprobar la contaminación del aire (llamada API) dada una localización en el mapa o usando el GPS de su dispositivo, avisa al usuario de situaciones peligrosas, le permite subir sus síntomas a una base de datos y un doctor podría revisarlos, hay una funcionalidad de login que permite al usuario registrarse usando una base de datos Firebase que mantiene un rol para cada usuario (Paciente o Doctor).",
+        "dos":"La app también permite guardar localizaciones como favoritas para que el usuario no busque siempre las mismas localizaciones.",
+        "tres":"Un doctor puede comprobar los síntomas de un paciente dado el día y el correo del usuario.",
+        "cuatro":"Este fue mi Trabajo de Fin de Grado en la universidad, obtuve un 9/10."
+    },
+    "myrole": "Mi aportación",
+    "myroletextairelocal": {
+        "uno": "Este proyecto está hecho únicamente por mi así que destacaré las tareas más relevantes que hice:",
+        "dos": "Aprender nuevas tecnologías como React Native, Redux, Firebase y Expo.",
+        "tres": "Tener reuniones asidamente con los stakeholders(tutores) de la aplicación.",
+        "cuatro": "Tratar con las llamadas API, React Hooks, y la eficiencia",
+        "cinco": "Tratar diferentemente algunas librerías/funcionalidades dependiendo de si el sistema operativo del usuario final es iOS o Android."
+    },
+    "technologies": "Tecnologías",
+    "mobilebased": "Componentes basados para móviles/CSS",
+    "relevant-links": "Links Relevantes",
+    "here-you-can": "Aquí podrás encontrar el .apk para usar la aplicación asimismo como el código de la App.",
+    "appwalletshowcase": "Conector de web con wallet Review",
+    "abouttextappconnector": "'Ergo App Connector' es una librería que contiene un componente que maneja la conexión de una web a la billetera del usuario. Se conecta bien con Nautilus o Safew que son las dos billeteras extensiones de navegador más conocidas de Ergo",
+    "myroletextappconnector" : {
+        "uno": "Lo que aporté para esta librería fue:",
+        "dos": "Investigar sobre Storybook y Rollup.js previo a la creación de la estructura de la librería, y asegurarme que ambos se inicializan correctamente",
+        "tres": "Implementar la lógica para desconectar billeteras y conectar a la billetera, que llevó largas conversaciones y reuniones con los creadores de las billeteras.",
+        "cuatro": "Crear un popup que enseñe como desconectar la billetera",
+        "cinco": "Una gran mejoría en el styling del componente hecho previamente",
+        "seis": "Creación del paquete final para subir a npmjs.org gracias a Rollup.js"
+    },
+    "nightowlshowcase": "Night Owl Review",
+    "abouttextnightowl": "Debido a que en los casinos actuales uno no puede saber realmente si hay aleatoriedad o amaños, algunos desarrolladores y yo nos juntamos desde todas partes del mundo para crear Night Owl e intentar traer verdadera privacidad y transparencia al casino al conectar un bonito FrontEnd con la tecnología blockchain donde todos pueden ver los números generados.",
+    "myroletextnightowl": {
+        "uno": "Ya que todos los desarrolladores Frontend del proyecto somos Junior, alguien tuvo que tomar un rol de líder y actuar como un Product Manager y fui yo, mis tareas más relevantes son:",
+        "dos": "Asegurar que la UI sigue las peticiones de los stakeholders y es una UI atractiva ",
+        "tres": "Llevar a cabo la mayoría de los Git merges, conflicts, pushes y branches, manteniendo mi branch siempre actualizada",
+        "cuatro": "70%-75% del código de la interfaz está hecho por mi",
+        "cinco": "Mantener la hoja de ruta y lista de tareas limpia y clara en Jira"
+    },
+    "enter-your-name": "Escribe tu nombre",
+    "enter-email": "Escribe tu correo",
+    "write-your-message": "Escribe tu mensaje",
+    "email-succesful": "Correo enviado satisfactoriamente",
+    "email-failed": "El correo enviado ha fallado, prueba manualmente a danielmaestreyepes@gmail.com"
+}
