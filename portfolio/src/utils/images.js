@@ -12,6 +12,9 @@ import htmlcssjsIllustration from "../assets/htmlcssjsIllustration.svg"
 import backArrow from "../assets/backArrow.svg"
 import reactNpmImage from "../assets/reactNpmImage2.png"
 import mobileDevelopmentImage from "../assets/mobileDevelopmentImage.svg"
+import unitedKingdom from "../assets/united-kingdom-flag-icon.png"
+import unitedStates from "../assets/united-states-flag-icon.png"
+import spain from "../assets/spain-flag-icon.png"
 
 const images = {
     myself: myself,
@@ -28,6 +31,9 @@ const images = {
     backArrow: backArrow,
     reactNpm: reactNpmImage,
     mobileDevelopment: mobileDevelopmentImage,
+    unitedKingdom: unitedKingdom,
+    unitedStates: unitedStates,
+    spanishFlag: spain,
 }
 
 export default images;

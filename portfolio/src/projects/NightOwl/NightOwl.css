@@ -16,6 +16,23 @@
   margin: 0.4em;
 }
 
+.DappConnector-wrapper-mobile {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  background-color: #00203fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DappConnector-wrapper-mobile h1 {
+  color: #adefd1ff;
+  font-size: 2em;
+  margin: 0.4em;
+}
+
 .first-section-project {
   scroll-snap-align: start;
   width: 100%;
@@ -95,12 +112,13 @@ li a:hover {
   flex-direction: row;
 }
 /* ------------------------------------ Go back homme ----------------------------------------- */
-.go-back {
+.go-back-no {
   position: fixed;
   top: 0;
   left: 0;
   width: 12%;
   height: auto;
+  width: auto;
   color: #00203fff;
   display: flex;
   flex-direction: row;
@@ -116,19 +134,59 @@ li a:hover {
   cursor: pointer;
   transition: all 0.7s ease;
 }
-.go-back:hover {
+.go-back-no:hover {
   transform: translateY(+5px);
   box-shadow: 7px 6px 28px 1px rgba(98, 214, 185, 0.35);
 }
-.go-back:active {
+.go-back-no:active {
   transform: scale(0.9);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(98, 214, 185, 0.14);
   /* Lowering the shadow */
 }
 
-.go-back img {
+.go-back-no img {
   width: 30px;
   height: 30px;
   margin-left: 30px;
+}
+
+@media (max-width:1800px) {
+  .NightOwl-wrapper {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width:1400px) {
+  .NightOwl-wrapper {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width:1200px) {
+  .NightOwl-wrapper {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width:1000px) {
+
+  .second-section-project {
+    padding: 1% 15% 1% 5%;
+  }
+
+  .NightOwl-wrapper {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width:800px) {
+
+  .second-section-project {
+    padding: 1% 5% 1% 5%;
+  }
+
+  .NightOwl-wrapper {
+    font-size: 0.55em;
+  }
 }

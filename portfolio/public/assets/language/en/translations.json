@@ -1,0 +1,78 @@
+{
+    "title" : "Software Engineer",
+    "subtitle" : {
+        "uno": "I graduated as a Software Engineer at 'Universidad de Murcia', I am passionate about Web Development and I aim to become a great Full-Stack developer in the future.",
+        "dos": "I consider myself an insatiable learner that likes to produce high-quality, scalable, responsive and with great user experience software."
+    },
+    "aboutme": "About Me",
+    "aboutmetext": {
+        "uno": "Hello, I'm Daniel, I love coding, I started my journey as a developer when I was 15 after having the need of creating a mod for the game 'Minecraft', I didn't understand anything I just followed some random tutorial's guidance, and guess what, I liked it.",
+        "dos": "Then I joined the Software Engineering career at Universidad de Murcia, where I discovered how complex coding actually is and that the process of learning how to code is endless, I haven't stopped learning since then and I won't stop now.",
+        "tres": "In my third year of university, I started spending some of my free time learning more by myself which lead me to take a few Frontend Development courses on Youtube and ",
+        "thisone": "this one",
+        "cuatro": ", this self-learning made me fall in love with web development and join a team of developers all over the world to build our dream casino together! I can easily communicate in English with them as I have got a Cambridge C1 Certificate.",
+        "cinco": "I am now looking for a junior developer position to start my career as a web developer and enhance my skills!",
+        "seis": "Here are a few technologies I have used ordered from more to less experienced:",
+        "siete": "React, JavaScript, HTML, CSS, Git, VSCode",
+        "ocho": "Java, React Native, Eclipse, Jira, Firebase",
+        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
+    },
+    "projectstitle": "Some of my projects!",
+    "nightowlcasino": "Night Owl Casino",
+    "nightowlbrief": "The first decentralized casino built on the Ergo blockchain. Night Owl aims to bring the long overdue qualities of transparency, voice, and true privacy to casino gaming to provide the ideal platform on which users can build and play their favorite games.",
+    "appwalletconnector": "App Wallet Connector",
+    "appwalletbrief": "Ergo App Connector is a library that contains a component that handles connecting your website to the user's Ergo Wallet. It connects to either Nautilus or Safew which are 2 known browser extension wallets for the Ergo blockchain",
+    "airelocal": "AireLocal App",
+    "airelocalbrief": "Android & iOS App that allows the user to check air pollution given a location in the map or given his location detected via the device GPS, it also warns the user about dangerous situations, and allows him to upload his symptoms and a doctor could check them anytime",
+    "contact": "Contact",
+    "contact-subtitle": "Have a question, want to work together, or simply want to say hi? Go ahead!",
+    "name": "Name",
+    "email-address": "Email Address",
+    "write-a-message": "Write a message",
+    "send": "Send",
+    "gobackhome": "Go back home",
+    "airelocalshowcase": "AireLocal Showcase",
+    "about": "About",
+    "abouttextairelocal": {
+        "uno":"It is an Android & iOS App that allows the user to check air pollution (API call) given a map location or his location using the device's GPS, it also warns the user about dangerous situations, allows him to upload his symptoms to a database and a doctor could check them anytime, there is a login feature which allows registering users in a Firebase database and keeps its role (Doctor or patient) stored.",
+        "dos":"The app also allows the user to save locations as favorite so that the user doesn't have to look up everytime for the same location.",
+        "tres":"Doctor can check anytime the symptoms that a patient uploaded given a day and the user's mail.",
+        "cuatro":"This was my final degree project at University, I got a 9/10."
+    },
+    "myrole": "My Role",
+    "myroletextairelocal": {
+        "uno": "This time I did the whole project by myself so I will just say the most relevant stuff that I did:",
+        "dos": "Learning new tech such as React Native, Redux, Firebase and Expo.",
+        "tres": "Having regular meetings with the App's stakeholders.",
+        "cuatro": "Regularly deal with API calls, React Hooks and global efficiency",
+        "cinco": "Treat some libraries and/or functionalities differently depending on wether the mobile running the app is iOS or Android."
+    },
+    "technologies": "Technologies",
+    "mobilebased": "Mobile-based Components/CSS",
+    "relevant-links": "Relevant Links",
+    "here-you-can": "Here you can find the .apk to use the app yourself alongside with the project codebase itself.",
+    "appwalletshowcase": "Ergo App Connector Showcase",
+    "abouttextappconnector": "Ergo App Connector is a library that contains a component that handles connecting your website to the user's Ergo Wallet. It connects to either Nautilus or Safew which are 2 known browser extension wallets for the Ergo blockchain",
+    "myroletextappconnector" : {
+        "uno": "What I did for this library was:",
+        "dos": "Researching about Storybook and Rollup.js before creating the initial structure of the library, and making sure they are both properly set up",
+        "tres": "Implemented the wallet removal logic for both wallets, which had me having long conversations and meetings with both wallet's creators.",
+        "cuatro": "Creating a modal pop-up that taught the user how to disconnect",
+        "cinco": "Whole re-styling of it as it had a poor one before made by a friend",
+        "seis": "Package bundling using Rollup.js and listing it on npmjs.org"
+    },
+    "nightowlshowcase": "Night Owl Showcase",
+    "abouttextnightowl": "Due to the current casino space where you can't really see proof of true number randomness myself and some other blockchain, backend and frontend devs from all around the world are currently creating Night Owl, we aim to bring true privacy to casino gaming by connecting the Frontend with a Blockchain backend where all numbers generated by the blockchain can be seen by the user.",
+    "myroletextnightowl": {
+        "uno": "Since every Frontend developer in the project is a Junior Developer someone had to take the leading role and act as Product Manager and that was me, my most relevant tasks are:",
+        "dos": "Making sure the UI follows the stakeholders requests and keeps a clean and attractive look",
+        "tres": "Taking care of most of the Git merges, conflics, pushes and branches",
+        "cuatro": "70%-75% of the code is done by myself.",
+        "cinco": "Maintaining the task board in Jira (Task manager)"
+    },
+    "enter-your-name": "Enter your name",
+    "enter-email": "Enter your email address",
+    "write-your-message": "Write your message",
+    "email-succesful": "Email sent succesfully",
+    "email-failed": "The email sent failed, try manually to danielmaestreyepes@gmail.com"
+}
