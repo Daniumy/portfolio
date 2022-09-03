@@ -15,14 +15,14 @@
     width: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    background-color: #00203fff;
+    background-color: #00203FFF;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .DappConnector-wrapper-mobile h1 {
-    color: #adefd1ff;
+    color: #ADEFD1FF;
     font-size: 2em;
     margin: 0.4em;
   }
@@ -45,11 +45,11 @@
     flex-direction: column;
     align-items: left;
     padding: 1% 20% 1% 5%;
-    background-color: #00203fff;
+    background-color: #00203FFF;
   }
   
   .second-section-project-airelocal h1 {
-    color: #adefd1ff;
+    color: #ADEFD1FF;
     font-size: 3em;
     margin: 0.4em 0px;
   }
@@ -60,7 +60,7 @@
   }
   
   .MyRole-text-container h1 {
-    color: #adefd1ff;
+    color: #ADEFD1FF;
     font-size: 1.66em;
     margin: 0.4em 0px;
   }
@@ -78,7 +78,7 @@
     color: white;
   }
   li a:hover {
-    color: #adefd1ff;
+    color: #ADEFD1FF;
   }
   
   .ul-wrapper {
@@ -114,7 +114,14 @@
       font-size: 0.6em;
     }
   }
-
+  @media (max-width: 850px) {
+    .AireLocal-wrapper {
+      scroll-snap-type: none;
+      overflow-y: auto;
+    }
+  
+  }
+  
   @media (max-width:800px) {
 
     .second-section-project-airelocal {
@@ -142,7 +149,6 @@
     }
   }
   @media (max-height:650px) {
-
     .AireLocal-wrapper {
       font-size: 0.42em;
     }

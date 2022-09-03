@@ -11,10 +11,10 @@ function App() {
   const [airplaneHovered, setAirplaneHovered] = useState(false);
   const [secondScreen, setSecondScreen] = useState(false);
   const [hamburgerColor, setHamburgerColor] = useState(
-    window.matchMedia("(max-width: 950px)").matches ? "#adefd1ff" : "#00203fff"
+    window.matchMedia("(max-width: 950px)").matches ? "#ADEFD1FF" : "#00203FFF"
   );
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
-  const [socialsColor, setSocialsColor] = useState("#00203fff");
+  const [socialsColor, setSocialsColor] = useState("#00203FFF");
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem("language") || "es"
   );
@@ -45,14 +45,15 @@ function App() {
       const pixelesCadaPagina = scrollHeight / NUMERO_PAGINAS;
       const umbralDosPaginas = scrollHeight - pixelesCadaPagina * 2;
       const under950width = window.matchMedia("(max-width: 950px)").matches;
+
       if (scrollTop > 200) {
         setSecondScreen(true);
       }
       if (scrollTop < 200 || scrollTop > 1100) setSecondScreen(false);
-      if (scrollTop > umbralDosPaginas - 50 || (scrollTop < pixelesCadaPagina - 50 && under950width)) setHamburgerColor("#adefd1ff");
-      else setHamburgerColor("#00203fff");
-      if (scrollTop > pixelesCadaPagina + 50) setSocialsColor("#adefd1ff");
-      else setSocialsColor("#00203fff");
+      if (scrollTop > umbralDosPaginas - 50 || (scrollTop < pixelesCadaPagina - 50 && under950width)) setHamburgerColor("#ADEFD1FF");
+      else setHamburgerColor("#00203FFF");
+      if (scrollTop > pixelesCadaPagina + 50) setSocialsColor("#ADEFD1FF");
+      else setSocialsColor("#00203FFF");
     }
   }
 
@@ -122,7 +123,7 @@ function App() {
             >
               <rect width="512" height="512" rx="15%" fill={socialsColor} />
               <path
-                fill={socialsColor == "#00203fff" ? "#fff" : "#00203fff"}
+                fill={socialsColor == "#00203FFF" ? "#fff" : "#00203FFF"}
                 d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
               />
             </svg>
@@ -192,7 +193,7 @@ function App() {
             width="45"
             height="45"
             viewBox="0 0 24 24"
-            fill="#00203fff"
+            fill="#00203FFF"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
@@ -264,7 +265,7 @@ function App() {
                 width="30px"
                 height="30px"
               >
-                <rect width="512" height="512" rx="15%" fill="#00203fff" />
+                <rect width="512" height="512" rx="15%" fill="#00203FFF" />
                 <path
                   fill="#fff"
                   d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
@@ -285,7 +286,7 @@ function App() {
                 height="30px"
               >
                 <path
-                  fill="#00203fff"
+                  fill="#00203FFF"
                   d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
 	C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
 	H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
@@ -407,7 +408,7 @@ function App() {
             style={{
               width: 200,
               height: 2,
-              backgroundColor: "#adefd1ff",
+              backgroundColor: "#ADEFD1FF",
               marginBottom: 30,
             }}
           ></div>
