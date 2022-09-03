@@ -116,7 +116,7 @@
   height: 30%;
 }
 
-#airplane-image {
+.airplane-image {
   position: absolute;
   width: 130px;
   height: 130px;
@@ -126,6 +126,10 @@
   -moz-transition: all 1.5s ease;
   -o-transition: all 1.5s ease;
   transition: all 1.5s ease;
+}
+
+.airplane-image.active2 {
+  left: 445px;
 }
 
 .tech-stack > li {
@@ -740,6 +744,10 @@ textarea {
 }
 
 @media (max-width: 1300px) {
+  .airplane-image.active2 {
+    left: 370px;
+  }
+  
   /* ------------------------------------ GO BACK ----------------------------------------- */
   .go-back {
     position: fixed;
@@ -1009,7 +1017,7 @@ textarea {
     font-size: 1em;
   }
 
-  #airplane-image {
+  .airplane-image {
     position: absolute;
     width: 110px;
     height: 110px;
@@ -1170,6 +1178,9 @@ textarea {
 }
 
 @media (max-width: 720px) {
+  .airplane-image.active2 {
+    left: 80%;
+  }
   #MyRole-image {
     width: 350px;
     height: 175px;
@@ -1346,7 +1357,7 @@ textarea {
     font-size: 1em;
   }
 
-  #airplane-image {
+  .airplane-image {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -1665,7 +1676,7 @@ textarea {
     font-size: 0.8em;
   }
 
-  #airplane-image {
+  .airplane-image {
     position: absolute;
     width: 110px;
     height: 110px;
@@ -1689,6 +1700,21 @@ textarea {
 }
 
 @media (max-width: 540px) {
+  .about-me-text-wrapper {
+    width: 80%;
+  }
+
+  .about-me-text-wrapper h1 {
+    font-size: 2em;
+  }
+
+  .about-me-text {
+    font-size: 0.75em;
+  }
+  
+  .airplane-image.active2 {
+    left: 70%;
+  }
   .first-section-column h1 {
     color: #adefd1ff;
     font-size: 3em;
@@ -1905,6 +1931,9 @@ textarea {
     margin-top: 0em;
   }
 
+  .about-me-text {
+    font-size: 0.7em;
+  }
   .projects-wrapper {
     height: 95%;
     width: 100%;
@@ -1989,12 +2018,6 @@ textarea {
     align-self: center;
   }
 
-  #about-me-text {
-    font-size: 1em;
-    width: 100%;
-    align-self: center;
-  }
-
   /* ------------------------------------ SECOND SECTION ----------------------------------------- */
   .second-section {
     scroll-snap-align: start;
@@ -2016,11 +2039,7 @@ textarea {
     font-size: 1.6em;
   }
 
-  .about-me-text {
-    font-size: 0.7em;
-  }
-
-  #airplane-image {
+ .airplane-image {
     position: absolute;
     width: 90px;
     height: 90px;
@@ -2138,12 +2157,6 @@ textarea {
     align-self: center;
   }
 
-  #about-me-text {
-    font-size: 0.9em;
-    width: 100%;
-    align-self: center;
-  }
-
   /* ------------------------------------ SECOND SECTION ----------------------------------------- */
 
   .about-me-text-wrapper h1 {
@@ -2151,11 +2164,7 @@ textarea {
     margin-top: -25px;
   }
 
-  .about-me-text {
-    font-size: 0.67em;
-  }
-
-  #airplane-image {
+  .airplane-image {
     position: absolute;
     width: 70px;
     height: 70px;

@@ -46,7 +46,7 @@ export default function NightOwl() {
             <h1>{t("nightowlshowcase")}</h1>
             <div className="player-wrapper">
             <ReactPlayer
-                url="https://www.youtube.com/watch?v=6wNdK7eh5Ag"
+                url="https://youtu.be/sZWoFFf4kiU"
                 controls={true}
                 width="100%"
                 height="100%"

@@ -337,9 +337,8 @@ function App() {
       <div className="second-section" id="aboutme">
         <img
           alt="Airplane-illustration"
-          id={"airplane-image"}
+          className={airplaneHovered ? "airplane-image active2" : "airplane-image"}
           src={images.airplane}
-          style={airplaneHovered ? { left: 445 } : null}
         />
         <img alt="stairs" src={images.stairs} id="stairs" />
         <div id="square"></div>
