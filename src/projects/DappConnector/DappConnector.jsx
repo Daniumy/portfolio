@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./DappConnector.css";
+import "../../App.css";
+
 import ReactPlayer from "react-player/youtube";
 import images from "../../utils/images";
 import { useNavigate } from "react-router-dom";
@@ -8,36 +10,37 @@ import { useTranslation } from "react-i18next";
 export default function DappConnector() {
   const listInnerRef = useRef();
   const [secondScreen, setSecondScreen] = useState(false);
-  const [mobioleVersionDetected, setMobileVersionDetected] = useState(false);
-
+  // const [mobioleVersionDetected, setMobileVersionDetected] = useState(false);
+  const NUMERO_PAGINAS = 2;
   let navigate = useNavigate();
 
-  function handleResize() {
-    if (window.innerWidth < 670) {
-      setMobileVersionDetected(true);
-    } else {
-      setMobileVersionDetected(false);
-    }
-  }
-  window.addEventListener("resize", handleResize);
+  // function handleResize() {
+  //   if (window.innerWidth < 670) {
+  //     setMobileVersionDetected(true);
+  //   } else {
+  //     setMobileVersionDetected(false);
+  //   }
+  // }
+  // window.addEventListener("resize", handleResize);
 
   const [t, i18n] = useTranslation("translation");
   // i18n.changeLanguage(localStorage.getItem("language") || "en");
 
   function onScroll() {
     if (listInnerRef.current) {
-      const { scrollTop } = listInnerRef.current;
-      if (scrollTop > 200) setSecondScreen(true);
-      if (scrollTop < 600) setSecondScreen(false);
+      const { scrollTop, scrollHeight } = listInnerRef.current;
+      const pixelesCadaPagina = scrollHeight / NUMERO_PAGINAS;
+      if (scrollTop > pixelesCadaPagina - 300) setSecondScreen(true);
+      if (scrollTop < pixelesCadaPagina - 300) setSecondScreen(false);
     }
   }
-  if (mobioleVersionDetected)
-    return (
-      <div className="DappConnector-wrapper-mobile">
-        <h1>Mobile version not supported yet</h1>
-      </div>
-    );
-  else
+  // if (mobioleVersionDetected)
+  //   return (
+  //     <div className="DappConnector-wrapper-mobile">
+  //       <h1>Mobile version not supported yet</h1>
+  //     </div>
+  //   );
+  // else
     return (
       <div
         ref={listInnerRef}
@@ -47,24 +50,21 @@ export default function DappConnector() {
         <div className="first-section-project">
           <div className="first-section-column">
             <div
-              className="go-back"
-              style={
-                secondScreen
-                  ? { transform: "translateX(calc(90vw - 28%))" }
-                  : null
-              }
+              className={secondScreen ? "go-back second" : "go-back"}
               onClick={() => navigate("/")}
             >
               {t("gobackhome")}
               <img src={images.backArrow}></img>
             </div>
             <h1>{t("appwalletshowcase")}</h1>
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=_Rn3p634_bw"
-              controls={true}
-              width={1280}
-              height={720}
-            />
+            <div className="player-wrapper">
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=_Rn3p634_bw"
+                controls={true}
+                width="100%"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
         <div className="second-section-project">

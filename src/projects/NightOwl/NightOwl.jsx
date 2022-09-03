@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./NightOwl.css";
+import "../../App.css";
+
 import ReactPlayer from "react-player/youtube";
 import images from "../../utils/images";
 import { useNavigate } from "react-router-dom";
@@ -8,56 +10,48 @@ import { useTranslation } from "react-i18next";
 export default function NightOwl() {
   const listInnerRef = useRef();
   const [secondScreen, setSecondScreen] = useState(false);
-  const [mobioleVersionDetected, setMobileVersionDetected] = useState(false);
+  // const [mobioleVersionDetected, setMobileVersionDetected] = useState(false);
   let navigate = useNavigate();
-  function handleResize() {
-    if (window.innerWidth < 670) {
-      setMobileVersionDetected(true);
-    } else {
-      setMobileVersionDetected(false);
-    }
-  }
-  window.addEventListener("resize", handleResize);
+
+  const NUMERO_PAGINAS = 2;
 
   const [t, i18n] = useTranslation();
 
   function onScroll() {
     if (listInnerRef.current) {
-      const { scrollTop } = listInnerRef.current;
-      if (scrollTop > 200) setSecondScreen(true);
-      if (scrollTop < 600) setSecondScreen(false);
+      const { scrollTop, scrollHeight } = listInnerRef.current;
+      const pixelesCadaPagina = scrollHeight / NUMERO_PAGINAS;
+      if (scrollTop > pixelesCadaPagina - 300) setSecondScreen(true);
+      if (scrollTop < pixelesCadaPagina - 300) setSecondScreen(false);
     }
   }
-  if (mobioleVersionDetected)
-    return (
-      <div className="DappConnector-wrapper-mobile">
-        <h1>Mobile version not supported yet</h1>
-      </div>
-    );
-  else
+  // if (mobioleVersionDetected)
+  //   return (
+  //     <div className="DappConnector-wrapper-mobile">
+  //       <h1>Mobile version not supported yet</h1>
+  //     </div>
+  //   );
+  // else
     return (
       <div ref={listInnerRef} className="NightOwl-wrapper" onScroll={onScroll}>
         <div className="first-section-project">
           <div className="first-section-column">
             <div
-              className="go-back-no"
-              style={
-                secondScreen
-                  ? { transform: "translateX(calc(90vw - 28%))" }
-                  : null
-              }
+              className={secondScreen ? "go-back second" : "go-back"}
               onClick={() => navigate("/")}
             >
               {t("gobackhome")}
               <img src={images.backArrow}></img>
             </div>
             <h1>{t("nightowlshowcase")}</h1>
+            <div className="player-wrapper">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=sZWoFFf4kiU"
-              controls={true}
-              width={1280}
-              height={720}
-            />
+                url="https://www.youtube.com/watch?v=6wNdK7eh5Ag"
+                controls={true}
+                width="100%"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
         <div className="second-section-project">
@@ -76,7 +70,7 @@ export default function NightOwl() {
                 </ul>
               </div>
             </div>
-            <img id="MyRole-image" src={images.scrumBoard} />
+            <img id="MyRole-image-nightowl" src={images.scrumBoard} />
           </div>
           <div className="MyRole-container">
             <div className="MyRole-text-container">
