@@ -4,7 +4,7 @@
         "uno": "Me gradué como Ingeniero Informático en la Universidad de Murcia, me apasiona el desarrollo web y deseo convertirme en un gran desarrollador Full-Stack en el futuro.",
         "dos": "Me considero un aprendiz insaciable que le gusta producir software de alta calidad, escalable, responsive y con una buena experiencia de usuario."
     },
-    "aboutme": "Sobre mí",
+    "aboutme": "Sobre Mí",
     "aboutmetext": {
         "uno": "¡Hola! Soy Daniel, me encanta programar, comencé mi carrera de programador cuando tenía 15 años intentando crear un mod para un juego llamado Minecraft. No entendía nada solo seguí instrucciones de un video tutorial, pero me gustaba.",
         "dos": "Entonces decidí entrar a la carrera de Ingeniería Informática en la Universidad de Murcia, donde descubrí lo complejo que puede ser la programación y que el proceso de aprendizaje es infinito, no he parado de aprender desde entonces y no planeo parar.",
@@ -17,7 +17,8 @@
         "ocho": "Java, React Native, Eclipse, Jira, Firebase",
         "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
     },
-    "projectstitle": "¡Proyectos!",
+    "projectstitle": "Proyectos",
+    "projects": "Proyectos",
     "nightowlcasino": "Night Owl Casino",
     "nightowlbrief": "El primer casino descentralizado en la blockchain Ergo. Night Owl desea proveer las cualidades de transparencia, voz y verdadera privacidad al mundo del casino creando así la plataforma ideal en la que los usuarios pueden construir y jugar sus juegos favoritos.",
     "appwalletconnector": "Librería para conectar wallet",

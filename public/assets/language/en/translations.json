@@ -17,7 +17,8 @@
         "ocho": "Java, React Native, Eclipse, Jira, Firebase",
         "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
     },
-    "projectstitle": "Some of my projects!",
+    "projectstitle": "My Projects",
+    "projects": "Projects",
     "nightowlcasino": "Night Owl Casino",
     "nightowlbrief": "The first decentralized casino built on the Ergo blockchain. Night Owl aims to bring the long overdue qualities of transparency, voice, and true privacy to casino gaming to provide the ideal platform on which users can build and play their favorite games.",
     "appwalletconnector": "App Wallet Connector",
