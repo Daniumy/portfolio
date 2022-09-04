@@ -14,8 +14,8 @@
         "cinco": "I am now looking for a junior developer position to start my career as a web developer and enhance my skills!",
         "seis": "Here are a few technologies I have used ordered from more to less experienced:",
         "siete": "React, JavaScript, HTML, CSS, Git, VSCode",
-        "ocho": "Java, React Native, Eclipse, Jira, Firebase",
-        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
+        "ocho": "Java, React Native, Eclipse, Jira, Firebase, .NET",
+        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, MongoDB, AWS and jQuery"
     },
     "projectstitle": "My Projects",
     "projects": "Projects",

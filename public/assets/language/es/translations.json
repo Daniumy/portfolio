@@ -10,12 +10,12 @@
         "dos": "Entonces decidí entrar a la carrera de Ingeniería Informática en la Universidad de Murcia, donde descubrí lo complejo que puede ser la programación y que el proceso de aprendizaje es infinito, no he parado de aprender desde entonces y no planeo parar.",
         "tres": "En mi tercer año de carrera, comencé a usar mi tiempo libre para aprender de forma autónoma, y me llevó a tomar algunos cursos de desarrollo web en Youtube y ",
         "thisone": "este concretamente",
-        "cuatro": ", este auto-aprendizaje hizo que me encantase el desarrollo web y entrar en un equipo de desarrolladores de diferentes lugares del mundo para construir nuestro casino de ensueño juntos! Puedo comunicarme fácilmente con ellos gracias a mi C1 de Cambridge en inglés.",
-        "cinco": "Ahora mismo estoy buscando una posición como Desarrollador Web Junior, ¡perfeccionar mis habilidades y aprender nuevas!",
+        "cuatro": ", este auto-aprendizaje hizo que me encantase el desarrollo web y entrar en un equipo de desarrolladores de diferentes lugares del mundo para construir nuestro casino de ensueño juntos. Puedo comunicarme fácilmente con ellos gracias a mi C1 de Cambridge en inglés.",
+        "cinco": "Ahora mismo estoy buscando una posición como Desarrollador Web, me gustaría perfeccionar mis habilidades y aprender nuevas",
         "seis": "Estas son algunas tecnologías con las que he trabajado ordenadas de más a menos experiencia con ellas:",
         "siete": "React, JavaScript, HTML, CSS, Git, VSCode",
-        "ocho": "Java, React Native, Eclipse, Jira, Firebase",
-        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, .NET, jQuery"
+        "ocho": "Java, React Native, Eclipse, Jira, Firebase, .NET",
+        "nueve": "C, C++/C#, SQL, Python, Redux, Maven, MongoDB, AWS y jQuery"
     },
     "projectstitle": "Proyectos",
     "projects": "Proyectos",
