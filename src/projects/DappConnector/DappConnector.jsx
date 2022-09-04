@@ -17,7 +17,6 @@ export default function DappConnector() {
  
 
   const [t, i18n] = useTranslation("translation");
-
   function onScroll() {
     if (listInnerRef.current) {
       const { scrollTop, scrollHeight } = listInnerRef.current;

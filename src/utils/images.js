@@ -6,7 +6,6 @@ import stairsImage from "../assets/stairs.svg"
 import rouletteImage from "../assets/rouletteHomeCut.png"
 import dAppConnectorImage from "../assets/dAppConnectorImage.png"
 import aireLocalImage from "../assets/AireLocal.jpg"
-import mobileIllustration from "../assets/mobileIllustration.svg"
 import scrumBoardIllustrarion from "../assets/scrumBoardIllustrarion.svg"
 import htmlcssjsIllustration from "../assets/htmlcssjsIllustration.svg"
 import backArrow from "../assets/backArrow.svg"
@@ -26,7 +25,6 @@ const images = {
     dAppConnector: dAppConnectorImage,
     aireLocal: aireLocalImage,
     scrumBoard: scrumBoardIllustrarion,
-    mobileIllustration: mobileIllustration,
     webDesignIllustration: htmlcssjsIllustration,
     backArrow: backArrow,
     reactNpm: reactNpmImage,
