@@ -11,10 +11,12 @@ function App() {
   const [airplaneHovered, setAirplaneHovered] = useState(false);
   const [secondScreen, setSecondScreen] = useState(false);
   const [hamburgerColor, setHamburgerColor] = useState(
-    window.matchMedia("(max-width: 950px)").matches ? "#ADEFD1FF" : "#00203FFF"
+    window.matchMedia("(max-width: 950px)").matches ? "red" : "#00203FFF"
   );
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
-  const [socialsColor, setSocialsColor] = useState("#00203FFF");
+  const [socialsColor, setSocialsColor] = useState(
+    window.matchMedia("(max-width: 950px)").matches ? "red" : "#00203FFF"
+  );
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem("language") || "es"
   );
@@ -23,6 +25,14 @@ function App() {
   let navigate = useNavigate();
 
   const [t, i18n] = useTranslation("translation");
+
+  function handleResize() {
+    if (window.innerWidth < 950) {
+      setHamburgerColor("red");
+      setSocialsColor("red");
+    }
+  }
+  window.addEventListener("resize", handleResize);
 
   useEffect(() => {
     if (selectedLanguage === "en") {
@@ -36,21 +46,33 @@ function App() {
 
   const NUMERO_PAGINAS = 4;
 
+  const inputElement = useRef(null);
   const form = useRef();
+  useEffect(() => {
+    inputElement.current.onfocus = () => {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+    };
+  });
+
   const listInnerRef = useRef();
 
   function onScroll() {
-    if (listInnerRef.current) {
-      const { scrollTop, scrollHeight } = listInnerRef.current;
+    const { scrollTop, scrollHeight } = listInnerRef?.current;
+    if (scrollTop > 200 && scrollTop < 1100) {
+      setSecondScreen(true);
+    } else setSecondScreen(false);
+
+    if (listInnerRef.current && hamburgerColor != "red") {
       const pixelesCadaPagina = scrollHeight / NUMERO_PAGINAS;
       const umbralDosPaginas = scrollHeight - pixelesCadaPagina * 2;
       const under950width = window.matchMedia("(max-width: 950px)").matches;
 
-      if (scrollTop > 200) {
-        setSecondScreen(true);
-      }
-      if (scrollTop < 200 || scrollTop > 1100) setSecondScreen(false);
-      if (scrollTop > umbralDosPaginas - 50 || (scrollTop < pixelesCadaPagina - 50 && under950width)) setHamburgerColor("#ADEFD1FF");
+      if (
+        scrollTop > umbralDosPaginas - 50 ||
+        (scrollTop < pixelesCadaPagina - 50 && under950width)
+      )
+        setHamburgerColor("#ADEFD1FF");
       else setHamburgerColor("#00203FFF");
       if (scrollTop > pixelesCadaPagina + 50) setSocialsColor("#ADEFD1FF");
       else setSocialsColor("#00203FFF");
@@ -123,7 +145,7 @@ function App() {
             >
               <rect width="512" height="512" rx="15%" fill={socialsColor} />
               <path
-                fill={socialsColor == "#00203FFF" ? "#fff" : "#00203FFF"}
+                fill="white"
                 d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
               />
             </svg>
@@ -338,7 +360,9 @@ function App() {
       <div className="second-section" id="aboutme">
         <img
           alt="Airplane-illustration"
-          className={airplaneHovered ? "airplane-image active2" : "airplane-image"}
+          className={
+            airplaneHovered ? "airplane-image active2" : "airplane-image"
+          }
           src={images.airplane}
         />
         <img alt="stairs" src={images.stairs} id="stairs" />
@@ -420,6 +444,7 @@ function App() {
                 <input
                   type="text"
                   name="name"
+                  ref={inputElement}
                   placeholder={t("enter-your-name")}
                   required
                 />
@@ -428,6 +453,7 @@ function App() {
                 <h2>{t("email-address")}</h2>
                 <input
                   type="email"
+                  ref={inputElement}
                   name="email"
                   placeholder={t("enter-email")}
                   required
@@ -437,6 +463,7 @@ function App() {
             <div className="second-input-row-container">
               <h2>{t("write-a-message")}</h2>
               <textarea
+                ref={inputElement}
                 name="message"
                 placeholder={t("write-your-message")}
                 required

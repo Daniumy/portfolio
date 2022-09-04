@@ -1182,8 +1182,9 @@ textarea {
     height: 100vh;
     width: 100%;
     scroll-snap-type: none;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
+  
 
   .social-icons-container {
     position: fixed;
@@ -2054,7 +2055,11 @@ textarea {
 
   .about-me-text-wrapper {
     width: 92%;
-    height: 80vh;
+    height: 78vh;
+  }
+
+  .about-me-text {
+    font-size: 0.75em;
   }
 
   .about-me-text-wrapper h1 {
@@ -2184,6 +2189,15 @@ textarea {
   .about-me-text-wrapper h1 {
     font-size: 1.4em;
     margin-top: -25px;
+  }
+
+  .about-me-text-wrapper {
+    width: 92%;
+    height: 80vh;
+  }
+
+  .about-me-text {
+    font-size: 0.72em;
   }
 
   .airplane-image {

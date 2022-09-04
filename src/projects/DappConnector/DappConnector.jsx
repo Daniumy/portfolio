@@ -10,21 +10,13 @@ import { useTranslation } from "react-i18next";
 export default function DappConnector() {
   const listInnerRef = useRef();
   const [secondScreen, setSecondScreen] = useState(false);
-  // const [mobioleVersionDetected, setMobileVersionDetected] = useState(false);
+
   const NUMERO_PAGINAS = 2;
   let navigate = useNavigate();
 
-  // function handleResize() {
-  //   if (window.innerWidth < 670) {
-  //     setMobileVersionDetected(true);
-  //   } else {
-  //     setMobileVersionDetected(false);
-  //   }
-  // }
-  // window.addEventListener("resize", handleResize);
+ 
 
   const [t, i18n] = useTranslation("translation");
-  // i18n.changeLanguage(localStorage.getItem("language") || "en");
 
   function onScroll() {
     if (listInnerRef.current) {
@@ -34,13 +26,7 @@ export default function DappConnector() {
       if (scrollTop < pixelesCadaPagina - 300) setSecondScreen(false);
     }
   }
-  // if (mobioleVersionDetected)
-  //   return (
-  //     <div className="DappConnector-wrapper-mobile">
-  //       <h1>Mobile version not supported yet</h1>
-  //     </div>
-  //   );
-  // else
+  
     return (
       <div
         ref={listInnerRef}
