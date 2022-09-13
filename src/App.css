@@ -1952,8 +1952,8 @@ textarea {
   .project-card:nth-of-type(1) {
     position: absolute;
     align-self: center;
-    top: 53%;
-    height: 38%;
+    top: 54%;
+    height: 36%;
   }
 
   .project-card:nth-of-type(1) img {
@@ -1974,7 +1974,7 @@ textarea {
   }
 
   .project-card {
-    height: 55%;
+    height: 52%;
     width: 92%;
     margin: 0px 10px;
     background-color: #adefd1ff;
@@ -1994,252 +1994,143 @@ textarea {
   }
 }
 
-@media (max-height: 860px) {
-  /*FIRST SECTION*/
+@media (max-width: 365px) {
   .first-section-row {
     display: flex;
     flex-direction: column;
-    height: 92%;
+    height: 100%;
     position: relative;
-  }
-
-  .first-section-left-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 74%;
-    width: 100%;
-    background-color: #00203fff;
   }
 
   .first-section-left-content {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     height: 70%;
+    color: white;
+  }
+}
+
+@media (max-width: 365px ), (max-height:650px) {
+  .first-section-row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  .first-section-left-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 80%;
     color: white;
   }
 
   #title {
     color: #adefd1ff;
-    font-size: 2.5em;
-    margin-bottom: 0.9em;
+    font-size: 2.0em;
+    margin-bottom: 0.8em;
     align-self: center;
   }
 
-  /* ------------------------------------ SECOND SECTION ----------------------------------------- */
-  .second-section {
-    scroll-snap-align: start;
+  #about-me-text {
+    font-size: 0.9em;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    align-self: center;
   }
 
-  .about-me-text-wrapper {
-    width: 92%;
-    height: auto;
-  }
+  #image-of-myself {
 
-  .about-me-text {
-    font-size: 0.75em;
-  }
+    width: 100px;
+    top: calc(74% - 50px);
+    left: calc(45% - 40px);
 
-  .about-me-text-wrapper h1 {
-    font-size: 1.6em;
   }
+    /* ------------------------------------ SEECOND SECTION ----------------------------------------- */
 
-  .airplane-image {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-  }
+    .about-me-text-wrapper h1 {
+      font-size: 1.2em;
+      margin-top: -25px;
+    }
+  
+    .about-me-text-wrapper {
+      width: 94%;
+      height: auto;
+    }
+  
+    .about-me-text {
+      font-size: 0.64em;
+    }
+  
+    .airplane-image {
+      display:none;
+    }
+  
+    #coding-guy-image {
+      display:none;
+    }
+      /* ------------------------------------ THIRD SECTION ----------------------------------------- */
+    .projects-wrapper {
+      height: 95%;
+      width: 100%;
+      position: relative;
+    }
+  
+    .project-card:nth-of-type(1) {
+      position: absolute;
+      align-self: center;
+      top: 54%;
+      height: 36%;
+    }
+  
+    .project-card:nth-of-type(1) img {
+      display: block;
+      margin: 5% auto 3% auto;
+      border-radius: 15px;
+      height: 35%;
+      width: 80%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .project-card {
+      height: 52%;
+      width: 94%;
+      margin: 0px 10px;
+      background-color: #adefd1ff;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px rgb(107, 181, 147);
+      transition: transform 250ms;
+    }
+  
+    .project-card h2 {
+      color: #00203fff;
+      text-align: center;
+      font-size: 0.7em;
+    }
+  
+    .project-card-text {
+      font-size: 0.55em;
+    }
 
-  #coding-guy-image {
-    margin-top: -40px;
-    width: 20%;
-    height: 20%;
-  }
-
-  #square {
-    display: none;
-  }
-
-  #stairs {
-    display: "none";
-    width: 10px;
-  }
-  /* ------------------------------------ THIRD SECTION ----------------------------------------- */
-
-  .third-section-wrapper {
-    height: 90%;
-    width: 95%;
-  }
-
-  .third-section-wrapper h1 {
+    /* ------------------------------------ FOURTH SECTION ----------------------------------------- */
+  .fourth-section-wrapper h1 {
     text-align: center;
     color: #adefd1ff;
     font-size: 2em;
   }
 
-  .projects-wrapper {
-    height: 90%;
-    width: 100%;
-    position: relative;
-  }
-
-  .project-card:nth-of-type(1) {
-    position: absolute;
-    align-self: center;
-    top: 57%;
-    height: 40%;
-  }
-
-  .project-card:nth-of-type(1) img {
-    display: block;
-    margin: 5% auto 3% auto;
-    border-radius: 15px;
-    height: 45%;
-    width: 90%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .project-card:nth-of-type(1) h2 {
-    color: #00203fff;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: -20px;
-  }
-
-  .project-card h2 {
-    color: #00203fff;
-    text-align: center;
-    font-size: 1.2em;
-  }
-
-  .project-card-text {
-    text-align: center;
-    padding: 5% 5% 5% 5%;
-    font-size: 0.7em;
-  }
-
-  .fourth-section-wrapper h1 {
-    text-align: center;
-    color: #adefd1ff;
-    font-size: 2.8em;
-    margin-bottom: 0.1em;
-  }
-
   #contact-subtitle {
-    font-size: 1.3em;
-    margin-bottom: 1.4em;
-    width: 90%;
-  }
-
-  form {
-    width: 90%;
-    height: 57%;
-    background-color: #adefd1ff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 1.6em;
-  }
-
-  .first-input-row-container > input {
-    width: 100%;
-    height: 50%;
-    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
-    border: 0;
-    padding: 10px;
-    border-radius: 5px;
-  }
-}
-
-@media (max-height: 760px) {
-  /*FIRST SECTION*/
-
-  #title {
-    color: #adefd1ff;
-    font-size: 2.2em;
-    margin-bottom: 0.7em;
-    align-self: center;
-  }
-
-  /* ------------------------------------ SECOND SECTION ----------------------------------------- */
-
-  .about-me-text-wrapper h1 {
-    font-size: 1.4em;
-    margin-top: -25px;
-  }
-
-  .about-me-text-wrapper {
-    width: 92%;
-    height: auto;
-  }
-
-  .about-me-text {
-    font-size: 0.72em;
-  }
-
-  .airplane-image {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-  }
-
-  #coding-guy-image {
-    margin-top: -50px;
-    width: 20%;
-    height: 20%;
-  }
-
-  /* ------------------------------------ THIRD SECTION ----------------------------------------- */
-
-  .project-card img {
-    height: 34%;
-  }
-
-  .project-card:nth-of-type(1) h2 {
-    color: #00203fff;
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: -14px;
-  }
-
-  .project-card h2 {
-    color: #00203fff;
-    text-align: center;
     font-size: 1em;
-  }
-
-  .project-card-text {
-    text-align: center;
-    padding: 5% 5% 5% 5%;
-    font-size: 0.62em;
-  }
-  /* ------------------------------------ FOURTH SECTION ----------------------------------------- */
-  .fourth-section-wrapper h1 {
-    text-align: center;
-    color: #adefd1ff;
-    font-size: 2.4em;
-    margin-bottom: 0.1em;
-  }
-
-  #contact-subtitle {
-    font-size: 1.2em;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
+    margin-top: -15px;
     width: 90%;
   }
 
   form {
-    width: 90%;
-    height: 56%;
+    width: 94%;
+    height: 100%;
     background-color: #adefd1ff;
     border-radius: 15px;
     display: flex;
@@ -2247,11 +2138,17 @@ textarea {
     justify-content: space-evenly;
     margin-bottom: 1.6em;
   }
+  .first-input-row-container h2, .second-input-row-container h2 {
+    font-size: 0.9em;
+  }
 
+  .first-input-row-container h2{
+    margin-top: 10px;
+  }
   .second-input-row-container > textarea {
     resize: none;
     width: 100%;
-    height: 120px;
+    height: 80px;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
     border: 0;
     padding: 10px;

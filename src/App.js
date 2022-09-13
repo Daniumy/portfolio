@@ -33,10 +33,13 @@ function App() {
   window.addEventListener("resize", handleResize);
 
   useEffect(() => {
-    if (selectedLanguage === "en") {
+    if (selectedLanguage === "en") 
+    {
       localStorage.setItem("language", "en");
       i18n.changeLanguage("en");
-    } else {
+    }
+    else
+    {
       localStorage.setItem("language", "es");
       i18n.changeLanguage("es");
     }
